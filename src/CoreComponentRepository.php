@@ -46,7 +46,7 @@ class CoreComponentRepository
                 //     curl_setopt($stream, CURLOPT_RETURNTRANSFER, 1);
                 //     $rn = curl_exec($stream);
                 //     curl_close($stream);
-        
+                    $rn = 'no';
                     if($rn == 'no') {
                         self::finalizeCache($addon);
                         Cache::rememberForever($addon->unique_identifier.'-purchased', function () {
